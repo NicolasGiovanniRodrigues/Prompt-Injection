@@ -1,0 +1,363 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* ===== CABEÇALHO ===== */
+#cabecalho {
+  background-color: #0f172a;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container-cabecalho {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.imagem-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+#menu a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#menu a:hover {
+  color: #38bdf8;
+}
+
+/* ===== SEÇÃO INICIAL ===== */
+.secao-inicial {
+  background-color: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.secao-inicial h1 {
+  color: #ffffff;
+  font-size: 38px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 15px auto 25px auto;
+}
+
+.imagem-principal {
+  max-width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* ===== BOTÕES ===== */
+.botao {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background-color: #0ea5e9;
+}
+
+button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+/* ===== SEÇÕES ===== */
+.secao {
+  padding: 60px 0;
+}
+
+.secao-clara {
+  background-color: #e2e8f0;
+}
+
+.imagem-secao {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+  color: #0284c7;
+}
+
+
+.exemplo-texto {
+  font-style: italic;
+  color: #b91c1c;
+  background-color: #fef2f2;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ===== LISTA DE DICAS ===== */
+.lista-dicas {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lista-dicas li {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border-left: 5px solid #22c55e;
+}
+
+
+
+
+
+.resposta-ia {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  min-height: 20px;
+  text-align: left;
+}
+
+/* ===== QUIZ ===== */
+.pergunta {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pergunta label {
+  display: block;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#botao-resultado {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.resultado-quiz {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ===== RODAPÉ ===== */
+#rodape {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.integrantes {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .container-cabecalho {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #menu ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .secao-inicial h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* ===== PROMPT INJECTION ===== */
+.exemplo-caixa {
+  background-color: #ffffff;
+  border-left: 5px solid #38bdf8;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.exemplo-instrucoes {
+  background-color: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.exemplo-texto-ok {
+  font-style: italic;
+  color: #15803d;
+  background-color: #f0fdf4;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.aviso-ficticio {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #475569;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ===== DEMONSTRAÇÃO ===== */
+.caixa-demonstracao {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.titulo-demo {
+  font-weight: bold;
+  color: #0284c7;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#campo-prompt {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+#botao-enviar {
+  display: block;
+  margin: 0 auto;
+}
+
+.rotulo-resposta {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.resposta-insegura {
+  border-left: 5px solid #dc2626;
+}
+
+.resposta-segura {
+  border-left: 5px solid #22c55e;
+}
+
+.dica-demo {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #475569;
+  text-align: center;
+}
